@@ -1,0 +1,531 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 6px;
+  font-family: "Merriweather", serif;
+  color: #25221D;
+}
+
+@keyframes type {
+  from {
+    width: 0;
+  }
+}
+@keyframes blink {
+  to {
+    opacity: 0;
+  }
+}
+body {
+  font-size: 1.7rem;
+}
+
+#rightMenu {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  border-radius: 8px;
+  background: #dbcdcd;
+}
+
+#rightMenu a {
+  color: #562B45;
+  text-decoration: none;
+  display: block;
+  padding: 15px;
+}
+
+#rightMenu a:hover {
+  color: dimgray;
+}
+
+#rightMenuItems {
+  display: none;
+  position: absolute;
+  top: 72px;
+  width: 100%;
+  background: rgba(224, 220, 220, 0.85);
+  text-align: center;
+}
+
+#rightMenuItems a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  padding: 2rem;
+  border-bottom: 1px solid whitesmoke;
+}
+
+header {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  letter-spacing: 0.3rem;
+  overflow: hidden;
+}
+
+header #top {
+  height: 12rem;
+}
+
+header #top #favicon {
+  position: absolute;
+  margin-top: 2.5rem;
+  margin-left: 4.5rem;
+}
+
+header #top #favicon img {
+  height: 7rem;
+  width: 7rem;
+}
+
+header #top #logo {
+  line-height: 12rem;
+  font-size: 3rem;
+  position: absolute;
+  left: 15rem;
+}
+
+header #top #logo a {
+  color: #25221D;
+  text-decoration: none;
+}
+
+header #top nav {
+  visibility: hidden;
+}
+
+header #slider {
+  height: 90%;
+  background: url("../img/adult-bridge-businessmen-1059120.jpg") center/cover no-repeat;
+  position: relative;
+  background-attachment: fixed;
+}
+
+header #slider #effects {
+  display: none;
+}
+
+header #slider #code {
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 35%;
+  width: 80%;
+  background-color: rgba(0, 0, 0, 0.35);
+  padding: 1.7rem;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 0.4rem;
+}
+
+header #slider #code p {
+  font-size: 2.3rem;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  animation: type 4s steps(60, end);
+}
+
+header #slider #code p span {
+  animation: blink 1s infinite;
+}
+
+header #slider #text {
+  display: none;
+}
+
+section .content .one, section .content .one-two {
+  margin: 2%;
+  padding: 0.8rem;
+  z-index: 2;
+  position: relative;
+}
+
+section .content h2, section .content h3 {
+  margin-bottom: 2.5rem;
+  color: #562B01;
+  text-align: center;
+}
+
+.shadow {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  min-height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+strong {
+  font-weight: bold;
+}
+
+b {
+  font-weight: bold;
+}
+
+.showAll {
+  color: inherit;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  border-radius: 0.4rem;
+  padding: 1.5rem;
+  background-color: #405373;
+  color: whitesmoke !important;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+  width: 12rem;
+  transition: all 1s;
+}
+
+.showAll:hover {
+  background-color: rgba(64, 83, 115, 0.8);
+}
+
+#hidden, #hidden1 {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+
+section {
+  line-height: 2.4rem;
+  text-align: justify;
+  min-height: 50rem;
+  overflow: hidden;
+  position: relative;
+}
+
+section:nth-of-type(1) {
+  background-color: #fff;
+}
+
+section:nth-of-type(2) {
+  margin-top: 1.5rem;
+  background: url("../img/beautiful-blur-brunette-2602085.jpg") center/cover no-repeat;
+  background-attachment: fixed;
+  color: whitesmoke;
+}
+
+section:nth-of-type(4) {
+  background-color: whitesmoke;
+}
+
+section:nth-of-type(5) {
+  background: url("../img/architectural-design-architecture-buildings-830891.jpg") center/cover no-repeat;
+  background-attachment: fixed;
+  color: whitesmoke;
+}
+
+section .content {
+  width: 90%;
+  margin: 0 auto;
+  clear: both;
+  overflow: hidden;
+}
+
+section .content .module {
+  font-size: 2rem;
+}
+
+section .content img {
+  display: block;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border: 1px solid #89786E;
+  margin: 0 auto;
+}
+
+section .content img.picture {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  width: 12rem;
+  height: 12rem;
+  padding: 0;
+  border: none;
+}
+
+section .content h2 {
+  font-size: 2.7rem;
+  line-height: 2.8rem;
+  margin-top: 3rem;
+  margin-bottom: 2.5rem;
+}
+
+section .content h2.light {
+  color: whitesmoke;
+}
+
+section .content h3 {
+  margin-top: 1rem;
+  font-size: 2.3rem;
+}
+
+section .content h3.light {
+  color: whitesmoke;
+  text-align: left;
+  margin-top: 0.6rem;
+  margin-bottom: 0.6rem;
+}
+
+section .content a {
+  color: inherit;
+}
+
+section .iframe {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+form input, form textarea, form button {
+  width: 100%;
+  border: 1px solid whitesmoke;
+  border-radius: 0.5rem;
+  display: block;
+  margin-top: 1rem;
+  padding: 2rem;
+  background-color: transparent;
+  color: whitesmoke;
+  font-size: 1.5rem;
+  transition: all 1s;
+}
+
+form input:focus, form textarea:focus {
+  background-color: rgba(0, 0, 0, 0.4);
+  outline: 0;
+}
+
+.alert {
+  margin-top: 2rem;
+  width: 100%;
+  padding: 2rem;
+  border: 0.1rem solid whitesmoke;
+  border-radius: 0.4rem;
+}
+
+.alert-danger {
+  background-color: rgba(227, 48, 48, 0.6);
+}
+
+.alert-success {
+  background-color: rgba(2, 46, 2, 0.65);
+  font-size: 2rem;
+}
+
+form label {
+  display: block;
+  margin-top: 2rem;
+  font-size: 1.4rem;
+}
+
+form textarea {
+  font-family: inherit;
+  resize: none;
+}
+
+form button {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  outline: 0;
+}
+
+form button:hover {
+  background-color: rgba(245, 245, 245, 0.2);
+}
+
+#to_top {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  border: 1px solid #e0dcdc;
+  border-radius: 8px;
+  font-size: 1.2em;
+  display: none;
+  z-index: 999;
+  background: #e0dcdc;
+}
+
+#to_top a {
+  color: #562B45;
+  text-decoration: none;
+  display: block;
+  padding: 15px;
+}
+
+#to_top a:hover {
+  color: dimgray;
+}
+
+footer {
+  color: #fff;
+  min-height: 30rem;
+  background-color: #25221D;
+}
+
+footer .content {
+  width: 70%;
+  margin: 0 auto;
+  clear: both;
+  line-height: 3rem;
+}
+
+footer .content .one-two-three {
+  padding: 4%;
+  text-align: center;
+  border-bottom: 1px solid #fff;
+}
+
+footer .content .one-two-three a {
+  text-decoration: none;
+  color: inherit;
+}
+
+footer .content .one {
+  padding: 4%;
+  text-align: center;
+}
+
+footer .content a {
+  text-decoration: none;
+  color: inherit;
+}
+
+footer .content i {
+  margin-right: 0.2rem;
+}
+
+@media only screen and (min-width: 820px) {
+  header #top #logo {
+    width: 25%;
+  }
+
+  header #top nav {
+    visibility: visible;
+    width: 70%;
+    position: absolute;
+    margin-top: 3rem;
+    right: 2rem;
+    line-height: 6rem;
+    font-size: 2.6rem;
+  }
+
+  header #top nav ul li a {
+    float: left;
+    display: block;
+    width: 16.6666666667%;
+    text-decoration: none;
+    text-align: center;
+    color: #405373;
+  }
+
+  header #slider #effects {
+    display: block;
+    width: 70%;
+    position: absolute;
+    right: 2rem;
+  }
+
+  header #slider #effects div {
+    float: left;
+    width: 16.6666666667%;
+    text-align: center;
+    visibility: hidden;
+    color: #fff;
+  }
+
+  header #slider #effects div i {
+    font-size: 4rem;
+  }
+
+  header #slider #code {
+    top: 35%;
+    width: 120rem;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 0.4rem;
+    padding: 2.5rem;
+  }
+
+  header #slider #code p {
+    font-size: 3.6rem;
+  }
+
+  header #slider #text {
+    display: block;
+    width: 70%;
+    position: absolute;
+    right: 2rem;
+    bottom: 8rem;
+  }
+
+  header #slider #text div {
+    float: left;
+    width: 16.6666666667%;
+    text-align: center;
+    visibility: hidden;
+    color: #000;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.65);
+    font-size: 2.5rem;
+    border-radius: 0.4rem;
+  }
+
+  header #slider #text div i {
+    font-size: 3.5rem;
+    color: #405373;
+  }
+
+  section {
+    font-size: 2.2rem;
+    line-height: 3.6rem;
+    text-align: left;
+  }
+
+  section .content {
+    width: 70%;
+  }
+
+  section .content .one {
+    margin: 1%;
+  }
+
+  section .content .one-two {
+    margin: 1%;
+    float: left;
+    width: 48%;
+    overflow: auto;
+  }
+
+  form input, form textarea, form button {
+    width: 60%;
+  }
+
+  footer .content .one-two-three {
+    text-align: left;
+    margin: 1%;
+    width: 31.3333333333%;
+    float: left;
+    border-bottom: none;
+  }
+
+  footer .content .one {
+    border-top: 1px solid #fff;
+  }
+
+  #rightMenu {
+    visibility: hidden;
+  }
+
+  .showAll {
+    font-size: 1.6rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
